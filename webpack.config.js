@@ -77,7 +77,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "src/assets", to: "assets" },
+        { from: path.resolve(__dirname, "src/assets"), to: "assets" },
         // { from: "src/manifest.json", to: "manifest.json" },
         // { from: "src/service-worker.js", to: "service-worker.js" },
       ],
